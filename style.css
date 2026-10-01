@@ -1,0 +1,1260 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+
+
+:root {
+    --pink: #c05f89;
+    --pink-light: #f9e4ed;
+    --pink-border: #f0d2df;
+    --wine: #713d57;
+    --text: #795c6b;
+    --white: #ffffff;
+}
+
+
+/* =====================================================
+   الأساسيات
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+
+body {
+    position: relative;
+
+    font-family: "Cairo", sans-serif;
+
+    color: var(--wine);
+
+    background:
+        radial-gradient(
+            circle at 5% 10%,
+            #ffe6f0,
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 95% 35%,
+            #f9e5ee,
+            transparent 30%
+        ),
+
+        #fffafd;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =====================================================
+   الخلفية المتحركة
+   ===================================================== */
+
+.floating-subjects {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+.floating-subjects span {
+
+    position: absolute;
+
+    bottom: -100px;
+
+    color: #b95f85;
+
+    opacity: 0.17;
+
+    font-family: "Cairo", sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    animation: subjectFloat linear infinite;
+}
+
+
+/* توزيع العناصر */
+
+.floating-subjects span:nth-child(1) {
+    left: 4%;
+    animation-duration: 18s;
+    animation-delay: -3s;
+    font-size: 35px;
+}
+
+.floating-subjects span:nth-child(2) {
+    left: 12%;
+    animation-duration: 23s;
+    animation-delay: -11s;
+    font-size: 28px;
+}
+
+.floating-subjects span:nth-child(3) {
+    left: 20%;
+    animation-duration: 20s;
+    animation-delay: -7s;
+    font-size: 32px;
+}
+
+.floating-subjects span:nth-child(4) {
+    left: 29%;
+    animation-duration: 25s;
+    animation-delay: -16s;
+}
+
+.floating-subjects span:nth-child(5) {
+    left: 38%;
+    animation-duration: 22s;
+    animation-delay: -5s;
+    font-size: 21px;
+}
+
+.floating-subjects span:nth-child(6) {
+    left: 47%;
+    animation-duration: 19s;
+    animation-delay: -12s;
+    font-size: 35px;
+}
+
+.floating-subjects span:nth-child(7) {
+    left: 56%;
+    animation-duration: 24s;
+    animation-delay: -2s;
+    font-size: 28px;
+}
+
+.floating-subjects span:nth-child(8) {
+    left: 65%;
+    animation-duration: 21s;
+    animation-delay: -14s;
+    font-size: 20px;
+}
+
+.floating-subjects span:nth-child(9) {
+    left: 74%;
+    animation-duration: 26s;
+    animation-delay: -8s;
+    font-size: 32px;
+}
+
+.floating-subjects span:nth-child(10) {
+    left: 83%;
+    animation-duration: 20s;
+    animation-delay: -4s;
+    font-size: 30px;
+}
+
+.floating-subjects span:nth-child(11) {
+    left: 91%;
+    animation-duration: 24s;
+    animation-delay: -17s;
+}
+
+.floating-subjects span:nth-child(12) {
+    left: 7%;
+    animation-duration: 27s;
+    animation-delay: -20s;
+}
+
+.floating-subjects span:nth-child(13) {
+    left: 17%;
+    animation-duration: 22s;
+    animation-delay: -15s;
+    font-size: 18px;
+}
+
+.floating-subjects span:nth-child(14) {
+    left: 27%;
+    animation-duration: 19s;
+    animation-delay: -9s;
+    font-size: 20px;
+}
+
+.floating-subjects span:nth-child(15) {
+    left: 36%;
+    animation-duration: 25s;
+    animation-delay: -19s;
+    font-size: 30px;
+}
+
+.floating-subjects span:nth-child(16) {
+    left: 46%;
+    animation-duration: 21s;
+    animation-delay: -6s;
+    font-size: 32px;
+}
+
+.floating-subjects span:nth-child(17) {
+    left: 55%;
+    animation-duration: 28s;
+    animation-delay: -21s;
+    font-size: 27px;
+}
+
+.floating-subjects span:nth-child(18) {
+    left: 64%;
+    animation-duration: 23s;
+    animation-delay: -13s;
+}
+
+.floating-subjects span:nth-child(19) {
+    left: 73%;
+    animation-duration: 20s;
+    animation-delay: -18s;
+    font-size: 30px;
+}
+
+.floating-subjects span:nth-child(20) {
+    left: 82%;
+    animation-duration: 26s;
+    animation-delay: -10s;
+    font-size: 25px;
+}
+
+.floating-subjects span:nth-child(21) {
+    left: 90%;
+    animation-duration: 22s;
+    animation-delay: -22s;
+    font-size: 30px;
+}
+
+.floating-subjects span:nth-child(22) {
+    left: 3%;
+    animation-duration: 24s;
+    animation-delay: -14s;
+}
+
+.floating-subjects span:nth-child(23) {
+    left: 31%;
+    animation-duration: 20s;
+    animation-delay: -3s;
+    font-size: 28px;
+}
+
+.floating-subjects span:nth-child(24) {
+    left: 69%;
+    animation-duration: 27s;
+    animation-delay: -16s;
+    font-size: 30px;
+}
+
+.floating-subjects span:nth-child(25) {
+    left: 14%;
+    animation-duration: 25s;
+    animation-delay: -8s;
+    font-size: 20px;
+}
+
+.floating-subjects span:nth-child(26) {
+    left: 43%;
+    animation-duration: 23s;
+    animation-delay: -20s;
+    font-size: 20px;
+}
+
+.floating-subjects span:nth-child(27) {
+    left: 78%;
+    animation-duration: 21s;
+    animation-delay: -6s;
+    font-size: 20px;
+}
+
+.floating-subjects span:nth-child(28) {
+    left: 23%;
+    animation-duration: 26s;
+    animation-delay: -12s;
+    font-size: 21px;
+}
+
+.floating-subjects span:nth-child(29) {
+    left: 58%;
+    animation-duration: 24s;
+    animation-delay: -18s;
+    font-size: 20px;
+}
+
+.floating-subjects span:nth-child(30) {
+    left: 96%;
+    animation-duration: 22s;
+    animation-delay: -5s;
+    font-size: 27px;
+}
+
+
+/* حركة الخلفية */
+
+@keyframes subjectFloat {
+
+    0% {
+        transform: translateY(0) rotate(-5deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.13;
+    }
+
+    50% {
+        transform:
+            translateY(-50vh)
+            rotate(5deg);
+
+        opacity: 0.20;
+    }
+
+    90% {
+        opacity: 0.12;
+    }
+
+    100% {
+        transform:
+            translateY(-115vh)
+            rotate(-5deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   الواجهة الرئيسية
+   ===================================================== */
+
+.hero {
+
+    min-height: 90vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 70px 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 246, 250, 0.75),
+            rgba(249, 222, 235, 0.65)
+        );
+
+    z-index: 1;
+}
+
+
+.hero-decoration {
+
+    color: #d08bab;
+
+    font-size: 40px;
+
+    margin-bottom: 12px;
+}
+
+
+.eyebrow {
+
+    color: #ad6a89;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(
+            38px,
+            7vw,
+            76px
+        );
+
+    line-height: 1.5;
+
+    color: var(--wine);
+
+    margin: 14px 0;
+
+    font-weight: 800;
+}
+
+
+.hero-text {
+
+    max-width: 620px;
+
+    color: var(--text);
+
+    font-size: 18px;
+
+    line-height: 2.1;
+}
+
+
+.hero-line {
+
+    width: 85px;
+
+    height: 3px;
+
+    border-radius: 10px;
+
+    background: #d38bab;
+
+    margin: 28px auto;
+}
+
+
+/* =====================================================
+   زر اكتشفي الرسائل
+   ===================================================== */
+
+.start-button {
+
+    text-decoration: none;
+
+    display: inline-flex;
+
+    gap: 12px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #c05f89;
+
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 40px;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 25px rgba(192, 95, 137, 0.30);
+
+    border: 1px solid #b95782;
+
+    transition: 0.3s;
+}
+
+
+.start-button:hover {
+
+    transform: translateY(-4px);
+
+    background: #ad4f78;
+
+    box-shadow:
+        0 12px 30px rgba(173, 79, 120, 0.38);
+}
+
+
+.hero-flower {
+
+    position: absolute;
+
+    opacity: 0.55;
+
+    pointer-events: none;
+}
+
+
+.flower-one {
+
+    top: 18%;
+
+    right: 9%;
+
+    font-size: 55px;
+
+    animation:
+        float 5s ease-in-out infinite;
+}
+
+
+.flower-two {
+
+    bottom: 13%;
+
+    left: 9%;
+
+    font-size: 65px;
+
+    animation:
+        float 6s ease-in-out infinite reverse;
+}
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(-5deg);
+    }
+
+    50% {
+        transform:
+            translateY(-15px)
+            rotate(8deg);
+    }
+}
+
+
+/* =====================================================
+   قسم المعلمات
+   ===================================================== */
+
+.teachers-section {
+
+    position: relative;
+
+    z-index: 1;
+
+    padding:
+        75px 5% 100px;
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    text-align: center;
+}
+
+
+.section-heading h2 {
+
+    color: var(--wine);
+
+    font-size:
+        clamp(
+            24px,
+            4vw,
+            34px
+        );
+}
+
+
+.section-heading span {
+
+    color: var(--pink);
+
+    font-size: 27px;
+}
+
+
+.section-description {
+
+    text-align: center;
+
+    color: #9a7888;
+
+    margin:
+        12px 0 42px;
+
+    line-height: 2;
+}
+
+
+/* =====================================================
+   بطاقات المعلمات
+   ===================================================== */
+
+.teachers-container {
+
+    width:
+        min(
+            1200px,
+            100%
+        );
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+    gap: 22px;
+}
+
+
+.teacher-card {
+
+    position: relative;
+
+    min-width: 0;
+
+    min-height: 225px;
+
+    padding:
+        28px 15px 23px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.94
+        );
+
+    border:
+        1px solid
+        var(--pink-border);
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 10px 32px #77435a0c;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        border-color 0.3s;
+
+    animation:
+        cardAppear 0.5s both;
+}
+
+
+.teacher-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color: #d99ab5;
+
+    box-shadow:
+        0 18px 40px #77435a18;
+}
+
+
+@keyframes cardAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+.card-number {
+
+    position: absolute;
+
+    top: 13px;
+
+    right: 16px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #c88ba5;
+
+    font-weight: 700;
+}
+
+
+.teacher-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 9px;
+}
+
+
+.teacher-card h3 {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: var(--wine);
+
+    margin-bottom: 17px;
+
+    overflow-wrap: anywhere;
+}
+
+
+.teacher-card button {
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #995876;
+
+    background: #f9e5ee;
+
+    border:
+        1px solid transparent;
+
+    padding:
+        9px 17px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.teacher-card button:hover {
+
+    background: var(--pink);
+
+    color: white;
+}
+
+
+/* =====================================================
+   نافذة الرسالة
+   ===================================================== */
+
+.popup {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background:
+        rgba(
+            54,
+            31,
+            43,
+            0.58
+        );
+
+    backdrop-filter: blur(5px);
+}
+
+
+.popup.active {
+
+    display: flex;
+}
+
+
+.popup-box {
+
+    position: relative;
+
+    width:
+        min(
+            540px,
+            100%
+        );
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding:
+        45px 35px 38px;
+
+    border:
+        1px solid #f0d2df;
+
+    border-radius: 32px;
+
+    background: #fffafd;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 90px #00000026;
+
+    animation:
+        popupIn 0.3s ease;
+}
+
+
+@keyframes popupIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px)
+            scale(0.96);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+.close-button {
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 18px;
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f9e5ee;
+
+    color: #925570;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+.popup-flower {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.popup-eyebrow {
+
+    color: #ad7890;
+
+    font-size: 14px;
+}
+
+
+.popup-box h2 {
+
+    color: var(--wine);
+
+    font-size: 30px;
+
+    margin: 8px 0;
+
+    overflow-wrap: anywhere;
+}
+
+
+.popup-line {
+
+    width: 65px;
+
+    height: 2px;
+
+    background: #d38bab;
+
+    margin: 20px auto;
+}
+
+
+.popup-message {
+
+    color: #765968;
+
+    font-size: 17px;
+
+    line-height: 2.2;
+
+    overflow-wrap: anywhere;
+}
+
+
+.popup-heart {
+
+    color: #cf7c9f;
+
+    font-size: 35px;
+
+    margin: 13px 0;
+}
+
+
+.back-button {
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: var(--pink);
+
+    color: white;
+
+    padding:
+        12px 25px;
+
+    font-family: inherit;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.back-button:hover {
+
+    background: #b76388;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =====================================================
+   الخاتمة
+   ===================================================== */
+
+.ending {
+
+    position: relative;
+
+    z-index: 1;
+
+    text-align: center;
+
+    padding:
+        75px 22px 85px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff2f8,
+            #f7dce8
+        );
+}
+
+
+.ending-flower {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.ending-small {
+
+    color: #ad6a89;
+
+    font-weight: 700;
+}
+
+
+.ending h2 {
+
+    font-size:
+        clamp(
+            28px,
+            5vw,
+            42px
+        );
+
+    color: var(--wine);
+
+    margin: 12px 0;
+}
+
+
+.ending-text {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--text);
+
+    line-height: 2.2;
+}
+
+
+.ending-signature {
+
+    color: #b7668b;
+
+    font-weight: 800;
+
+    font-size: 20px;
+
+    margin-top: 25px;
+}
+
+
+/* =====================================================
+   الشاشات المتوسطة
+   ===================================================== */
+
+@media (max-width: 950px) {
+
+    .teachers-container {
+
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+
+        gap: 16px;
+    }
+}
+
+
+/* =====================================================
+   الجوال
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .hero {
+
+        min-height: 80vh;
+
+        padding:
+            65px 22px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 39px;
+    }
+
+
+    .hero-text {
+
+        font-size: 16px;
+    }
+
+
+    .flower-one {
+
+        right: 3%;
+
+        font-size: 38px;
+    }
+
+
+    .flower-two {
+
+        left: 3%;
+
+        font-size: 45px;
+    }
+
+
+    .teachers-section {
+
+        padding:
+            55px 15px 70px;
+    }
+
+
+    .teachers-container {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+
+        gap: 12px;
+    }
+
+
+    .teacher-card {
+
+        min-height: 190px;
+
+        padding:
+            25px 9px 18px;
+
+        border-radius: 20px;
+    }
+
+
+    .teacher-icon {
+
+        font-size: 34px;
+    }
+
+
+    .teacher-card h3 {
+
+        font-size: 15px;
+
+        margin-bottom: 13px;
+    }
+
+
+    .teacher-card button {
+
+        font-size: 12px;
+
+        padding:
+            8px 12px;
+    }
+
+
+    .popup-box {
+
+        padding:
+            42px 22px 28px;
+
+        border-radius: 26px;
+    }
+
+
+    .popup-box h2 {
+
+        font-size: 26px;
+    }
+
+
+    .popup-message {
+
+        font-size: 16px;
+    }
+
+
+    .floating-subjects span {
+
+        font-size: 20px;
+
+        opacity: 0.13;
+    }
+}
+
+
+/* =====================================================
+   تقليل الحركة
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            0.01ms !important;
+
+        transition-duration:
+            0.01ms !important;
+
+        scroll-behavior:
+            auto !important;
+    }
+}
